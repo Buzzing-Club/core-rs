@@ -7,7 +7,7 @@ pub mod close_pools;
 pub mod swap_usdc_usdb;
 pub mod swap;
 pub mod vault;
-
+pub mod close_pools_v2;
 
 pub use initialize_market::*;
 pub use initialize_oracle::*;
@@ -18,3 +18,4 @@ pub use close_pools::*;
 pub use swap_usdc_usdb::*;
 pub use swap::*;
 pub use vault::*;
+pub use close_pools_v2::*;

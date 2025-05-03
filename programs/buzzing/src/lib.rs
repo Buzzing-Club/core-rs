@@ -42,6 +42,10 @@ pub mod buzzing {
         close_pools::handler(ctx, creatorx, topic_id)
     }
 
+    pub fn close_pools_v2(ctx: Context<ClosePoolsV2>, topic_id: u64) -> Result<()> {
+        close_pools_v2::handler(ctx, topic_id)
+    }
+
     pub fn swap_usdc_usdb(
         ctx: Context<SwapUsdcUsdb>,
         amount: u64,
